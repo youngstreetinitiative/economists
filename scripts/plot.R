@@ -14,7 +14,7 @@ ggplot(econs, aes(x =  pol.fis, y = pol.mon, col = full.nm)) +
   annotate("segment", x = 0, xend = 0, y = 1, yend = -1) +
   annotate("segment", x = 1, xend = -1, y = 0, yend = 0) +
   geom_point(show.legend = F) +
-  geom_label_repel(aes(label = full.nm), show.legend = F) +
+  geom_label_repel(aes(label = abr.nm), show.legend = F) +
   ggtitle("Comparing Economists on Fiscal and Monetary Policy") +
   theme(axis.text.x = element_blank(),
         axis.title.x = element_blank(),
